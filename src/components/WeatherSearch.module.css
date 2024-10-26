@@ -1,0 +1,152 @@
+.weatherSearch {
+    margin: 0 auto 0.625rem auto;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    background: #f0f4f8;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 650px;
+}
+
+.input {
+    width: 60%;
+    padding: 0.625rem;
+    margin-bottom: 0.625rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.button {
+    margin-left: 1rem;
+    padding: 0.625rem 0.9375rem;
+    background-color: #36d7b7;
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #2bb2a2;
+}
+
+.container {
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+.loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.25rem;
+}
+
+.cityName {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0.5rem auto 0.8rem auto;
+}
+
+.weatherInfo {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.detailContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.weatherDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    flex-grow: 1;
+}
+
+.foreCastDetails {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    max-height: 180px;
+    overflow: scroll;
+    background-color: #f5e9df;
+    border-radius: 5px;
+    opacity: 0.8;
+    min-width: 320px;
+}
+
+.weatherItem, .foreCastItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.weatherItem p, .foreCastItem p {
+    margin: 0;
+}
+
+.placeholder {
+    color: #888;
+    font-size: 1rem;
+    margin-top: 1.25rem;
+}
+
+.error {
+    color: #f00;
+    font-size: 1rem;
+    margin-top: 0.625rem;
+}
+
+@media screen and (max-width: 768px) {
+    .weatherSearch, .foreCastDetails {
+        min-width: unset;
+    }
+
+    .container {
+        padding: 0;
+        height: initial;
+    }
+
+    .detailContainer {
+        gap: 1rem;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    .weatherItem {
+        font-size: 1rem;
+    }
+
+    .cityName {
+        font-size: 1.3rem;
+    }
+
+    .weatherDetails, .foreCastDetails {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+    .weatherSearch {
+        padding-left: 0;
+        padding-right: 0;
+        width: 90vw;
+        margin: 0 auto 0.8rem auto;
+    }
+}

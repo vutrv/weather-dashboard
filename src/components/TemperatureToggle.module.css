@@ -1,0 +1,47 @@
+.temperatureToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.toggleLabel {
+  margin: 0 0.625rem;
+  font-weight: bold;
+  color: white;
+}
+
+.toggleSlider {
+  -webkit-appearance: none;
+  width: 2.5rem; 
+  height: 0.9375rem; 
+  border-radius: 0.625rem;
+  background: #ccc;
+  outline: none;
+  transition: background 0.3s, width 0.3s;
+}
+
+.toggleSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.25rem; 
+  height: 1.25rem;
+  border-radius: 50%;
+  background: #37d573;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.toggleSlider::-moz-range-thumb {
+  width: 1.25rem; 
+  height: 1.25rem;
+  border-radius: 50%;
+  background: #28a745;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .temperatureToggle {
+    margin-bottom: 0.5rem;
+  }
+}
